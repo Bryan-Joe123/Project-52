@@ -1,0 +1,93 @@
+h1{
+    font-size: 100px;
+}
+
+#title{
+    display: flex;
+    /* flex-flow: column wrap; */
+    justify-content:center;
+}
+
+.pictures{
+    position: relative;
+    /* position: relative; */
+    margin: 80px;
+    border: solid;
+    border-radius: 20px;
+}
+
+.links{
+    border: solid;
+    border-color: rgb(114, 114, 114);
+    background-color: rgb(185, 185, 185);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover{
+    background-color: azure;
+}
+
+.pictures p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+    font-variant: small-caps;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.pictures:hover p{
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.pictures:hover img{
+    animation-name: fadeoutpar;
+    animation-duration: 1s;
+    opacity: 0.3;
+}
+
+#header{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-align: center;
+    background-color: rgb(78, 78, 78);
+}
+
+body{
+    background: rgb(61, 61, 61);
+    color: azure;
+}
+
+#menu{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+}
+
+#grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+p,h2{
+    text-align: center;
+}
+
+.item{
+    margin: 50px;
+}
+
+h1{
+    color:rgb(255, 166, 0);
+}
